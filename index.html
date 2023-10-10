@@ -6,21 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1>Ilie Stefan Balan</h1>
+    <img src="/images/linkedin picture.JPG" alt="Profile picture" width="150" height="150">
     <nav>
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact me</a></li>
+        <li><a href="./placeholder.html">Resume</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+    <div class="right">
+      <h2>Welcome to my page!</h2>
     </div>
   </section>
 
@@ -28,16 +35,44 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
+      <p> With a solid academic background in electronic and telecommunication engineering, I possess a strong
+        foundation in analytical problem-solving and technical expertise. My career trajectory is marked by a transition
+        towards a new passion for data-driven innovation and software development. I am committed to leveraging my
+        engineering acumen to excel in the dynamic realm of data science and software development marking a significant
+        shift in my professional journey.
+      </p>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+      <aside id="projectsGrid">
+        <a href="https://ibalan92.github.io/prework-study-guide/" id="project1" class="projectsGridArea">
+          <div class="heading">Prework</div>
+        </a>
+        <a href="https://ibalan92.github.io/market-website-refactor/" id="project2" class="projectsGridArea">
+          <div class="heading">Code refactoring</div>
+        </a>
+        <a href="#" id="project3" class="projectsGridArea">
+          <div class="heading">Portofolio</div>
+        </a>
+        <a href="./placeholder.html" id="project4" class="projectsGridArea">
+          <div class="heading">Placeholder 1</div>
+        </a>
+        <a href="./placeholder.html" id="project5" class="projectsGridArea">
+          <div class="heading">Placeholder 2</div>
+        </a>
+      </aside>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section" id="contact">
       <h2>Contact Me</h2>
+      <div class="footer">
+        <a href="https://github.com/ibalan92" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/stefanbalan92" target="_blank">LinkedIn</a>
+        <a href="#">Email: ibalan92@gmail.com</a>
+      </div>
     </section>
   </main>
 </body>

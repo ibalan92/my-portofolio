@@ -2,11 +2,138 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: darkblue;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 600px;
+  list-style-type: none;
+  text-decoration: underline;
+  font-size: 150%;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+nav a {
+  background-color: unset;
+  color: skyblue;
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+.hero-banner {
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/play-keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.right{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  width: 20%;
+  
+
+}
+.right h2{
+  padding: 15px;
+  font-size: 200%;
+  background-color: rgb(64, 202, 202);
+  
+}
+
+.page-section{
+  margin: 50px 5%;
+  display:flex;
+}
+
+.page-section h2{
+  align-items: flex-start;
+  font-size: 70px;
+  width: 20%;
+  text-align: right;
+  border-right: 6px solid gray;
+  padding-right: 20px;
+
+}
+
+
+#projectsGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 400px 150px 150px;
+  grid-template-columns: 640px 640px;
+  grid-template-areas:
+  "project1 project1"
+  "project2 project3"
+  "project4 project5"
+  ;
+}
+
+#project1{
+  grid-area: project1;
+  background-image: url("../images/Practice-Programming-Step-1.jpg");
+}
+
+#project2{
+  grid-area: project2;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
+
+#project3{
+  grid-area: project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project4{
+  grid-area: project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#project5{
+  grid-area: project5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.projectsGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid skyblue;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgb(64, 202, 202);
+  padding: 5px;
+  height: 50px;
+  color: Black;
+  font-size: 25px;
+  margin-bottom: 30px;
+  width: max-content;
 }
 
 h1,
@@ -18,6 +145,46 @@ h6 {
   margin: 0;
 }
 
-p {
+.page-section p {
   margin: 0;
+  padding-left: 40px;
+  font-size: 30px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  padding-left: 100px;
+}
+
+.footer a {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+  #projectsGrid {
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "project1" 
+    "project2"
+    "project3"
+    "project4"
+    "project5" 
+     ;
+  }
+  
 }
